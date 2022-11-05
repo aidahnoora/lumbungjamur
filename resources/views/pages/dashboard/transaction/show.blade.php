@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            Transaction &raquo; #{{ $transaction->id }} {{ $transaction->name }}
+            Transaksi &raquo; #{{ $transaction->id }} {{ $transaction->name }}
         </h2>
     </x-slot>
 
@@ -24,14 +24,14 @@
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <h2 class="font-semibold text-lg text-gray-800 leading-tight mb-5">Transaction Details</h2>
+            <h2 class="font-semibold text-lg text-gray-800 leading-tight mb-5">Detail Transaksi</h2>
 
             <div class="bg-white overflow-hidden shadow sm:rounded-lg mb-10">
                  <div class="p-6 bg-white border-b border-gray-200">
                     <table class="table-auto w-full">
                         <tbody>
                             <tr>
-                                <th class="border px-6 py-4 text-right">Name</th>
+                                <th class="border px-6 py-4 text-right">Nama</th>
                                 <td class="border px-6 py-4">{{ $transaction->user->name }}</td>
                             </tr>
                             <tr>
@@ -39,7 +39,7 @@
                                 <td class="border px-6 py-4">{{ $transaction->user->email }}</td>
                             </tr>
                             <tr>
-                                <th class="border px-6 py-4 text-right">Address</th>
+                                <th class="border px-6 py-4 text-right">Alamat</th>
                                 <td class="border px-6 py-4">{{ $transaction->address }}</td>
                             </tr>
                             <tr>
@@ -47,7 +47,7 @@
                                 <td class="border px-6 py-4">{{ $transaction->payment }}</td>
                             </tr>
                             <tr>
-                                <th class="border px-6 py-4 text-right">Total Price</th>
+                                <th class="border px-6 py-4 text-right">Total Harga</th>
                                 <td class="border px-6 py-4">{{ number_format($transaction->total_price) }}</td>
                             </tr>
                             <tr>
@@ -63,7 +63,7 @@
                 </div>
             </div>
 
-            <h2 class="font-semibold text-lg text-gray-800 leading-tight mb-5">Transaction Items</h2>
+            <h2 class="font-semibold text-lg text-gray-800 leading-tight mb-5">Item Transaksi</h2>
             <div class="shadow overflow-hidden sm:rounded-md">
                 <div class="px-4 py-5 bg-white sm:p-6">
                     <table id="crudTable">
@@ -75,7 +75,7 @@
                             <th>Qty</th>
                         </tr>
                         </thead>
-                        <tbody></tbody>
+                        <tbody class="text-center"></tbody>
                     </table>
                 </div>
             </div>

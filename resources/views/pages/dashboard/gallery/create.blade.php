@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            Product &raquo; {{ $product->name }} &raquo; Gallery &raquo; Upload Photos
+            Produk &raquo; {{ $product->name }} &raquo; Galeri &raquo; Upload Foto
         </h2>
     </x-slot>
 
@@ -37,7 +37,7 @@
                     <div class="flex flex-wrap -mx-3 mb-6">
                         <div class="w-full px-3 text-right">
                             <button type="submit" class=" shadow-lg bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-                                Save Gallery
+                                Save Foto
                             </button>
                         </div>
                     </div>

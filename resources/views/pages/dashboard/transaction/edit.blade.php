@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            Transaction &raquo; {{ $item->name }} &raquo; Edit
+            Transaksi &raquo; {{ $item->name }} &raquo; Edit
         </h2>
     </x-slot>
 
@@ -47,7 +47,7 @@
                     <div class="flex flex-wrap -mx-3 mb-6">
                         <div class="w-full px-3 text-right">
                             <button type="submit" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-                                Update Transaction
+                                Update Transaksi
                             </button>
                         </div>
                     </div>

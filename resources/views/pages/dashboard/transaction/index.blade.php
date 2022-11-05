@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Transaction') }}
+            {{ __('Transaksi') }}
         </h2>
     </x-slot>
 
@@ -43,7 +43,7 @@
                             <th>Aksi</th>
                         </tr>
                         </thead>
-                        <tbody></tbody>
+                        <tbody class="text-center"></tbody>
                     </table>
                 </div>
             </div>

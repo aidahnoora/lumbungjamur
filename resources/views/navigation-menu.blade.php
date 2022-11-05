@@ -18,15 +18,15 @@
 
                     @if(Auth::user()->roles == 'admin')
                         <x-jet-nav-link href="{{ route('dashboard.product.index') }}" :active="request()->routeIs('dashboard.product.index')">
-                            {{ __('Products') }}
+                            {{ __('Produk') }}
                         </x-jet-nav-link>
 
                         <x-jet-nav-link href="{{ route('dashboard.category.index') }}" :active="request()->routeIs('dashboard.category.index')">
-                            {{ __('Category') }}
+                            {{ __('Kategori') }}
                         </x-jet-nav-link>
 
                         <x-jet-nav-link href="{{ route('dashboard.transaction.index') }}" :active="request()->routeIs('dashboard.transaction.index')">
-                            {{ __('Transaction') }}
+                            {{ __('Transaksi') }}
                         </x-jet-nav-link>
 
                         <x-jet-nav-link href="{{ route('dashboard.user.index') }}" :active="request()->routeIs('dashboard.user.index')">
@@ -110,9 +110,6 @@
 
                         <x-slot name="content">
                             <!-- Account Management -->
-                            <div class="block px-4 py-2 text-xs text-gray-400">
-                                {{ __('Manage Account') }}
-                            </div>
 
                             <x-jet-dropdown-link href="{{ route('profile.show') }}">
                                 {{ __('Profile') }}
@@ -162,13 +159,13 @@
 
             @if(Auth::user()->roles == 'admin')
                 <x-jet-responsive-nav-link href="{{ route('dashboard.product.index') }}" :active="request()->routeIs('dashboard.product.index')">
-                    {{ __('Product') }}
+                    {{ __('Produk') }}
                 </x-jet-responsive-nav-link>
                 <x-jet-responsive-nav-link href="{{ route('dashboard.category.index') }}" :active="request()->routeIs('dashboard.category.index')">
-                    {{ __('Category') }}
+                    {{ __('Kategori') }}
                 </x-jet-responsive-nav-link>
                 <x-jet-responsive-nav-link href="{{ route('dashboard.transaction.index') }}" :active="request()->routeIs('dashboard.transaction.index')">
-                    {{ __('Transaction') }}
+                    {{ __('Transaksi') }}
                 </x-jet-responsive-nav-link>
                 <x-jet-responsive-nav-link href="{{ route('dashboard.user.index') }}" :active="request()->routeIs('dashboard.user.index')">
                     {{ __('User') }}
